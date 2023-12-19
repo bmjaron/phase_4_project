@@ -5,10 +5,10 @@
 **Author**: [Benjamin Jaron](mailto:bmjaron@gmail.com)
 
 # Table of Contents
-* [Repository Structure](#I.Repository Structure)
+* [Repository Structure](#I.Structure)
 * [Overview](#II.Overview)
-* [Data and EDA](#III.Data and EDA)
-* [Text Cleaning](#IV. Text Cleaning)
+* [Data and EDA](#III.EDA)
+* [Text Cleaning](#IV.Cleaning)
 * [Modeling](#V.Modeling)
 * [Conclusions](#VI.Conclusions)
 
