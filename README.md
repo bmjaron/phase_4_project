@@ -3,13 +3,18 @@
 **Author**: [Benjamin Jaron](mailto:bmjaron@gmail.com)
 
 # Table of Contents
-* [Overview](#I.Overview)
-* [Data](#II.Data)
-* [EDA](#III.EDA)
-* [Modeling](#IV.Modeling)
-* [Conclusions](#V.Conclusions)
+* [Repository Structure](#I.Repository Structure)
+* [Overview](#II.Overview)
+* [Data and EDA](#III.Data and EDA)
+* [Text Cleaning](#IV. Text Cleaning)
+* [Modeling](#V.Modeling)
+* [Conclusions](#VI.Conclusions)
 
-# I. Overview
+# I. Repository Structure
+
+Aside from this README file, our repository contains a data set of 8,721 tweets, a .gitignore file, and a Jupyter notebook. It also contains the slide deck for our non-technical presentation. 
+
+# II. Overview
 
 Our client is SXSW and we've been tasked with building a model that helps them classify positive tweets. Our data for this project is 8,721 tweets from the conference. Many of these tweets have an emotion associated with them. 
 
@@ -19,11 +24,11 @@ A characteristic of our data was that it was imbalanced. Positive tweets (our ta
 
 Our final model was a multinomial naive Bayes' model. Our metric that we scored this model on was recall, as we found it imperative to correctly identify as many positive tweets as possible. This would provide the SXSW with the ability to build off that positive sentiment. Our model had a 73% recall score, which means that we can identify 73% of all positive tweets.
 
-# II. Data 
+# II. Data and EDA
 
 We have a data set that contains 8,721 entries. Each entry is a tweet that contains text, to which product or brand the tweet is directed, and if there is a discernable emotion from the tweet.
 
-# III. EDA 
+# III. Text Cleaning
 
 # IV. Modeling
 
