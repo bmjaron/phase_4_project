@@ -30,9 +30,19 @@ Our final model was a multinomial naive Bayes' model. Our metric that we scored 
 
 We have a data set that contains 8,721 entries. Each entry is a tweet that contains text, to which product or brand the tweet is directed, and if there is a discernable emotion from the tweet.
 
+![readme2](https://github.com/bmjaron/phase_4_project/assets/115658357/da4868bb-ba86-4de6-b03e-ead0084451b1)
+
+We see that we have a data imbalance, with most tweets not being of the positive target. We account for this in our modeling section by undersampling the majority class.
+
+![readme3](https://github.com/bmjaron/phase_4_project/assets/115658357/4379d382-00c1-4323-8d89-77889c6437d9)
+
+After all stopwords were removed, the above represents the most common words to appear in the corpus. Below we show the most common unique positive and unique non-positive words.
+
 
 
 # III. Text Cleaning
+
+In order to properly process our tweets, we used a relatively conventional cleaning and tokenization process using NLTK's built-in functions. We first all tweets of special characters and punctuation using regular expression. We then used NLTK's tokenizer. We also stemmed and lemmatized, and removed all English and business-problem specific stopwords.
 
 # IV. Modeling
 
@@ -42,7 +52,21 @@ The model that we used was a multinomial naive Bayes' classifier, and we were ab
 
 We felt that recall, which is the ratio of predicted positives to true positives, was the most approriate method to score our model. This is our business problem is to provide SXSW a model to identify as many positive tweets as possible, which will in turn enable them to fortify their strengths.
 
-## B. Method to determine best model
+## B. Validation method and vectorization
+
+In order to validate our model, we divided the data into 3 sets: training, testing and a holdout. The models were trained on the training set, and each iteration was tested on the testing set. We ran the final model on the unseen holdout set.
+
+An important element of our modeling process was converting our text data into features for modeling. We utilized both count vectorizers and the TF-IDF vectorizer.
+
+## C. Multinomial naive Bayes' 
+
+Our final model was a multinomial naive Bayes' model. The naive Bayes' model is specifically apt for text classification problems, and it was our best model. We attempted both count and TF-IDF vectors, and found that the model trained on features produced with the count vectorizer was the highest scoring. 
+
+The model had a recall score of 73% when ran on the holdout set. Below is a confusion matrix of our results. 
+
+![readme4](https://github.com/bmjaron/phase_4_project/assets/115658357/5ac84648-b0b6-421d-90e4-e8de67b4c4fe)
+
 
 # V. Conclusions 
 
+Our final recommendation is that SXSW use our model in order to predict positive tweets. In turn this will help them classify each potential positive tweet, and use its contents to identify and fortify existing strengths of the conference.
