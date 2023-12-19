@@ -38,6 +38,7 @@ We see that we have a data imbalance, with most tweets not being of the positive
 
 After all stopwords were removed, the above represents the most common words to appear in the corpus. Below we show the most common unique positive and unique non-positive words.
 
+![readme5](https://github.com/bmjaron/phase_4_project/assets/115658357/52856372-afdb-42d7-bbbe-e7c9b5a09550)
 
 
 # III. Text Cleaning
