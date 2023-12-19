@@ -1,3 +1,5 @@
+![readme1](https://github.com/bmjaron/phase_4_project/assets/115658357/2a140028-a99f-4670-a83f-98a1af42d331)
+
 # Predicting Positive Sentinment with Multinomial Bayes'
 
 **Author**: [Benjamin Jaron](mailto:bmjaron@gmail.com)
@@ -27,6 +29,8 @@ Our final model was a multinomial naive Bayes' model. Our metric that we scored 
 # II. Data and EDA
 
 We have a data set that contains 8,721 entries. Each entry is a tweet that contains text, to which product or brand the tweet is directed, and if there is a discernable emotion from the tweet.
+
+
 
 # III. Text Cleaning
 
